@@ -36,7 +36,8 @@ button {
   padding: 20px;
 }
 
-.game__button {
+.game__button,
+.stop__button {
   background-color: #faebd7;
   width: 50px;
   height: 50px;
@@ -44,10 +45,11 @@ button {
   border: 3px solid #000;
   border-radius: 5px;
   margin-bottom: 10px;
-  transition: transform 300ms ease-in;
+  transition: transform 200ms ease-in;
 }
 
-.game__button:hover {
+.game__button:hover,
+.stop__button:hover {
   transform: scale(1.1);
 }
 
@@ -57,7 +59,7 @@ button {
   line-height: 1.5;
   background-color: #fff;
   border: 3px solid #000;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-bottom: 10px;
 }
 
@@ -73,17 +75,22 @@ button {
 }
 
 .game__field {
-  cursor: none;
-  background-color: #000;
+  position: relative;
   width: 100%;
   height: 100%;
   margin-top: 100px;
-  opacity: 0.4;
+  overflow: hidden;
 }
 
-.game__bug,
-.game__carrot {
+.bug,
+.carrot {
   cursor: pointer;
+  transition: transform ease-in 200ms;
+}
+
+.bug:hover,
+.carrot:hover {
+  transform: scale(1.1);
 }
 
 .pop-up {
@@ -109,7 +116,7 @@ button {
   font-size: 24px;
   border: 3px solid #000;
   border-radius: 50%;
-  transition: transform 300ms ease-in;
+  transition: transform 200ms ease-in;
 }
 
 .pop-up__refresh:hover {
