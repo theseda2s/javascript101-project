@@ -36,8 +36,7 @@ button {
   padding: 20px;
 }
 
-.game__button,
-.stop__button {
+.game__button {
   background-color: #faebd7;
   width: 50px;
   height: 50px;
@@ -48,8 +47,7 @@ button {
   transition: transform 200ms ease-in;
 }
 
-.game__button:hover,
-.stop__button:hover {
+.game__button:hover {
   transform: scale(1.1);
 }
 
@@ -61,6 +59,9 @@ button {
   border: 3px solid #000;
   border-radius: 15px;
   margin-bottom: 10px;
+  visibility: hidden;
+  user-select: none;
+  cursor: auto;
 }
 
 .game__score {
@@ -72,6 +73,9 @@ button {
   border-radius: 50%;
   background-color: #e9967a;
   color: #fff;
+  visibility: hidden;
+  user-select: none;
+  cursor: auto;
 }
 
 .game__field {
@@ -85,7 +89,7 @@ button {
 .bug,
 .carrot {
   cursor: pointer;
-  transition: transform ease-in 200ms;
+  transition: transform ease-in 100ms;
 }
 
 .bug:hover,
